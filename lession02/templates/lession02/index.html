@@ -1,0 +1,12 @@
+{% load static %}
+
+
+{% if all_people %}
+    <ul>
+    {% for person in all_people %}
+        <li>{{person.id}} - {{ person.name }} - {{ person.age }} - {{ person.address }} - {{ person.mobile_number }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No person are available.</p>
+{% endif %}

@@ -1,10 +1,10 @@
 {% load static %}
-
+<a href="{% url 'lession02:formInput' %}">Add Person</a>
 
 {% if all_people %}
     <ul>
     {% for person in all_people %}
-        <li>{{person.id}} - {{ person.name }} - {{ person.age }} - {{ person.address }} - {{ person.mobile_number }}</li>
+        <li><a href="{% url 'lession02:detail' person.id %}">{{person.id}} - {{ person.name }} - {{ person.age }} - {{ person.address }} - {{ person.mobile_number }}</a></li>
     {% endfor %}
     </ul>
 {% else %}

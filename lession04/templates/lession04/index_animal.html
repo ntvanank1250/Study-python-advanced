@@ -1,0 +1,17 @@
+{% extends 'lession04/base.html' %}
+{% block content %}
+
+{% load static %}
+<a href="{% url 'lession04:addAnimal' %}">Add Animal</a>
+
+
+{% if listAnimal %}
+    <ul>
+    {% for animal in listAnimal %}
+        <li>{{animal.id}} - {{ animal.name }} - {{ animal.age }} - {{ animal.color }} </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No animal are available.</p>
+{% endif %}
+{% endblock %}

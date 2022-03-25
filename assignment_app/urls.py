@@ -7,4 +7,6 @@ urlpatterns = [
     path('lession02/',include('lession02.urls')),
     path('lession04/',include('lession04.urls')),
     path('lession05/',include('lession05.urls')),
+    path('lession06/',include('lession06.urls')),
+
 ]

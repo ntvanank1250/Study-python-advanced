@@ -8,4 +8,4 @@ django.setup()
 from lession05.models import Product
 
 for i in range(1000):
-    Product.objects.create(naem='Alfreds Futterkiste', description='Germany', price=101, date_create=timezone.now(), date_modified=timezone.now())
+    Product.objects.create(name='Alfreds Futterkiste', description='Germany', price=101, date_create=timezone.now(), date_modified=timezone.now())

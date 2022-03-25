@@ -43,12 +43,14 @@ INSTALLED_APPS = [
     'lession02',
     'lession04',
     'lession05',
+    'lession06',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
 ]
 
 MIDDLEWARE = [
@@ -135,9 +137,9 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #cache
-CACHES = {
-    'default' : {
-        'BACKEND': 'django.core.cache.backends.redis.RedisCache',
-        'LOCATION':'redis://127.0.0.1:6379',
-    }
-}
+# CACHES = {
+#     'default' : {
+#         'BACKEND': 'django.core.cache.backends.redis.RedisCache',
+#         'LOCATION':'redis://127.0.0.1:6379',
+#     }
+# }

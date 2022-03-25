@@ -1,0 +1,15 @@
+{% extends 'lession06/base.html' %}
+{% block title %} Home {% endblock %}
+
+{% block body %}
+    <h2>Blog cá nhân</h2>
+     {% if error_message %}
+          <div class="alert alert-primary" role="alert">
+            {{error_message}}
+          </div>
+    {% endif %}
+    <h1> "Ba phần bất lực, bảy phần nuông chiều cô"  </h1>
+    <div>Em đang đi từng bước thận trọng cho một khởi đầu mới.
+         Bước chân của em có đôi phần run rẩy, nhưng em biết trái tim mình đã can đảm và trưởng thành hơn xưa. </div>
+    </form>
+{% endblock %}

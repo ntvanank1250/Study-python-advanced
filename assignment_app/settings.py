@@ -27,6 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#send-mail app
+DEFAULT_FROM_EMAIL = 'cuuvuongthapnhi@gmail.com'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  
+EMAIL_HOST_USER = 'cuuvuongthapnhi@gmail.com'
+EMAIL_HOST_PASSWORD = 'Gmail231456231000Hieu'
+EMAIL_PORT= 587
+EMAIL_USE_TLS = True
 
 # Application definition
 
@@ -34,6 +42,7 @@ INSTALLED_APPS = [
     'lession01',
     'lession02',
     'lession04',
+    'lession05',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
